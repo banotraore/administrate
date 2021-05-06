@@ -4,7 +4,7 @@ module Administrate
       attr_reader :namespace, :resource
 
       def initialize(namespace, resource)
-        @namespace = namespace
+        @namespace = namespace.to_sym
         @resource = resource
       end
 
